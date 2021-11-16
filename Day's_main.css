@@ -6,13 +6,17 @@ body {
 .banner {
 
   background-image: url(https://images.unsplash.com/photo-1459278558918-f94278c0f022?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2946&q=80);
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .banner-text-bold {
   color: #d9675c;
   font-family: 'GmarketSansBold';
   font-size: 150px;
-  text-align: center;
+  margin: 0;
 }
 
 .banner-text-light {
@@ -50,10 +54,7 @@ h1 {
 
 
 .buttonSpace {
-  margin-top: 10px;
-  margin-bottom: 30px;
-  margin-left: 50px;
-  margin-right: 50px;
+  margin: 10px 30px 50px 50px;
   padding: 10px;
 
 }
