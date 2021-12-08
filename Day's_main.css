@@ -60,3 +60,25 @@ h1 {
   padding: 10px;
 
 }
+
+.scroll_down {
+  height: 20px;
+  width: 40px;
+  animation-name: arrow_down;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-delay: 1s;
+  /* animation-timing-function: ; */
+  /* animation-fill-mode: forwards; */
+}
+
+@keyframes arrow_down {
+  from {
+    margin-top: 0;
+  }
+
+  to {
+    margin-top: 10px;
+  }
+}
