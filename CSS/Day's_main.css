@@ -3,15 +3,44 @@ body {
   padding: 0;
 }
 
-.banner {
-
+#banner {
   background-image: url(https://images.unsplash.com/photo-1459278558918-f94278c0f022?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2946&q=80);
   background-size: cover;
   height: 800px;
   width: 100%;
   display: flex;
+  /* flex-direction: column; */
   align-items: center;
   justify-content: center;
+}
+
+.logo {
+  top: 2%;
+  left: 3%;
+  width: 6vw;
+  position: fixed;
+}
+
+.main_button {
+  position: fixed;
+  font-size: 15px;
+  font-family: 'GmarketSansBold';
+  color: #d8dede;
+  text-decoration: none;
+  top: 5%;
+  transition: 0.3s;
+}
+
+.main_button:nth-child(1) {
+  left: 55%;
+}
+
+.main_button:nth-child(2) {
+  left: 70%;
+}
+
+.main_button:nth-child(3) {
+  left: 85%;
 }
 
 .banner-text-bold {
@@ -62,16 +91,54 @@ h1 {
 }
 
 .scroll_down {
+  position: absolute;
+  font-size: 15px;
+  font-family: 'GmarketSansLight';
   height: 20px;
-  width: 40px;
-  background-color: #d9675c;
+  width: 100px;
+  color: #d8dede;
+  top: 90%;
   animation-name: arrow_down;
-  animation-duration: 1.5s;
+  animation-duration: 1s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
   animation-delay: 1s;
   /* animation-timing-function: ; */
   /* animation-fill-mode: forwards; */
+}
+
+.arrow_down {
+  width: 6.5vw;
+  margin-top: -15px;
+}
+
+.content {
+  height: 800px;
+}
+
+#welcome {
+  background-color: black;
+}
+
+#third_div {
+  background-color: #d8dede
+}
+
+.side_bar {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  top: 39%;
+  right: 3%;
+}
+
+.side_button {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #d9675c;
+  border: none;
+  margin: 1.2vw 0;
 }
 
 @keyframes arrow_down {
@@ -80,6 +147,6 @@ h1 {
   }
 
   to {
-    margin-top: 30 px;
+    margin-top: 10px;
   }
 }
