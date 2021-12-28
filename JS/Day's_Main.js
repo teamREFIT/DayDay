@@ -156,3 +156,20 @@ container.addEventListener('scroll', function(){
     }
 })
 
+var welcomeArrow = document.querySelector(".welcome_arrow")
+var arrowRight = document.querySelector(".arrow_right")
+var arrowRightText = document.querySelector(".arrow_right_text")
+
+welcomeArrow.addEventListener('mouseover', function(){
+    console.log('works')
+arrowRightText.style.fontFamily = 'GmarketSansBold';
+arrowRight.style.marginLeft = '0.8vw';
+arrowRightText.style.marginLeft = '1.7vw';
+arrowRight.style.textDecoration = 'none';
+// arrowRightText.style.fontWeight = '2000'
+})
+welcomeArrow.addEventListener('mouseout', function(){
+arrowRightText.style.fontFamily = 'GmarketSansLight';
+arrowRight.style.marginLeft = '';
+arrowRightText.style.marginLeft = '1vw';
+})

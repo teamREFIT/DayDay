@@ -1,0 +1,114 @@
+@font-face {
+  font-family: 'GmarketSansBold';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GmarketSansLight';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  background-color: #494949;
+}
+
+.logo {
+  top: 2%;
+  left: 3%;
+  width: 6vw;
+  position: fixed;
+  z-index: 3;
+  transition: 1s;
+}
+
+.main_button {
+  z-index: 5;
+  position: fixed;
+  font-size: 1.1vw;
+  font-family: 'GmarketSansBold';
+  color: #d8dede;
+  text-decoration: none;
+  top: 5%;
+  transition: 0.3s;
+}
+
+.main_button:nth-child(1) {
+  left: 60%;
+}
+
+.main_button:nth-child(2) {
+  left: 75%;
+}
+
+.main_button:nth-child(3) {
+  left: 90%;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.about-me {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.circle-red {
+  width: 45vw;
+  left: 3%;
+  position: absolute;
+  /* top: 5%; */
+}
+
+.circle-white {
+  width: 45vw;
+  left: 3%;
+  /* top: 5%; */
+  position: absolute;
+  /* animation-name: positioning;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: infinite;
+  /* animation-fill-mode: forwards; */
+}
+
+.circle-image {
+  width: 45vw;
+  left: 3%;
+  position: absolute;
+  /* top: 5%; */
+}
+
+@keyframes positioning {
+  from {
+    margin-right: 0;
+    margin-bottom: 0;
+    /* width: 49.3vw; */
+  }
+
+  to {
+    /* width: 40vw; */
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+.intro-text {
+  font-family: 'GmarketSansBold';
+  font-size: 5vw;
+  left: 0%;
+  display: absolute;
+}
