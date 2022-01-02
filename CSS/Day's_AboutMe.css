@@ -59,56 +59,66 @@ a:hover {
   text-decoration: none;
 }
 
-.about-me {
+.about_me {
   width: 100%;
   height: 100vh;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
-.circle-red {
+.introduction {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle_image {
   width: 45vw;
   left: 3%;
   position: absolute;
-  /* top: 5%; */
 }
 
-.circle-white {
-  width: 45vw;
-  left: 3%;
-  /* top: 5%; */
-  position: absolute;
-  /* animation-name: positioning;
-  animation-duration: 2s;
-  animation-timing-function: ease-out;
-  animation-iteration-count: infinite;
-  /* animation-fill-mode: forwards; */
+.circle_image:nth-child(2) {
+  animation-name: sunRise;
+  animation-duration: 1.5s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
 }
 
-.circle-image {
-  width: 45vw;
-  left: 3%;
-  position: absolute;
-  /* top: 5%; */
-}
-
-@keyframes positioning {
-  from {
-    margin-right: 0;
-    margin-bottom: 0;
-    /* width: 49.3vw; */
+@keyframes sunRise {
+  0% {
+    margin: 0;
   }
 
-  to {
-    /* width: 40vw; */
-    margin-right: 10px;
-    margin-bottom: 10px;
+  25% {
+    padding-bottom: 2vw;
+    margin-left: -1.5vw;
+  }
+
+  50% {
+    padding-bottom: 6vw;
+    margin-left: -3vw;
+  }
+
+  75% {
+    padding-bottom: 8vw;
+    margin-left: -4.5vw;
+  }
+
+  100% {
+    padding-bottom: 10vw;
+    margin-left: -6vw;
   }
 }
 
-.intro-text {
+.intro_position {
+  position: absolute;
+  right: 9%;
+}
+
+.intro_text {
   font-family: 'GmarketSansBold';
   font-size: 5vw;
-  left: 0%;
-  display: absolute;
 }
