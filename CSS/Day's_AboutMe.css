@@ -59,9 +59,23 @@ a:hover {
   text-decoration: none;
 }
 
-.about_me {
+.container {
   width: 100%;
   height: 100vh;
+  position: relative;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  overflow: auto;
+}
+
+.content {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  scroll-snap-align: start;
+}
+
+.about_me {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -116,9 +130,48 @@ a:hover {
 .intro_position {
   position: absolute;
   right: 9%;
+  display: flex;
+  flex-direction: row;
 }
 
 .intro_text {
   font-family: 'GmarketSansBold';
   font-size: 5vw;
+  color: #d8dede;
+  transition: 2s;
+}
+
+.intro_text:nth-child(3) {
+  padding-right: 3rem;
+}
+
+.turn_red {
+  color: #d9675c;
+}
+
+.information {
+  color: #494949;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#digital_years {
+  width: 100%;
+  margin-bottom: 5rem;
+  font-family: 'GmarketSansBold';
+  font-size: 40rem;
+  color: #d9675c;
+  text-align: center;
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+}
+
+#digital_age {
+  width: 100%;
+  font-family: 'GmarketSansBold';
+  font-size: 18rem;
+  color: #d8dede;
+  text-align: center;
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
 }

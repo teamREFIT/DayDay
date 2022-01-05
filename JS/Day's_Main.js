@@ -55,19 +55,19 @@ container.addEventListener('scroll', function(){
     console.log(container.scrollTop)
     if (container.scrollTop >= 0) {
       mainButton.style.color = '#d8dede'
-      logo.src ="./dayLOGOwhite-04.png"
+      logo.src ="./IMG/dayLOGOwhite-04.png"
   }
   if (container.scrollTop >= 750) {
       mainButton.style.color = '#494949'
-      logo.src = "./dayLOGOblack-04.png"
+      logo.src = "./IMG/dayLOGOblack-04.png"
   }
   if (container.scrollTop >= 1550) {
       mainButton.style.color = '#d9675c'
-      logo.src = "./dayLOGOwhite-04.png"
+      logo.src = "./IMG/dayLOGOwhite-04.png"
   }
   if (container.scrollTop >= 2350) {
       mainButton.style.color = 'black'
-      logo.src = "./dayLOGOblack-04.png"
+      logo.src = "./IMG/dayLOGOblack-04.png"
   }
 })
 })
@@ -136,7 +136,7 @@ sideBtn[3].onclick = function(){
 var globe = document.querySelector(".globe_animation")
 var circle = document.querySelector(".circle_animation")
 
-function reset_animation() {
+function resetAnimation() {
   globe.style.animation = 'none';
   globe.offsetHeight; /* trigger reflow */
   globe.style.animation = null; 
@@ -147,7 +147,7 @@ function reset_animation() {
 
 container.addEventListener('scroll', function(){
     if (container.scrollTop <= 200) {
-       reset_animation()
+       resetAnimation()
     }
     if (container.scrollTop >= 750) {
         console.log('yep')

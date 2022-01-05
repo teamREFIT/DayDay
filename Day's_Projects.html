@@ -5,11 +5,92 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Projects</title>
 </head>
 <link rel="stylesheet" href="./CSS/Day's_Project.css">
 
 <body>
+    <!-- navbar -->
+    <a class="main_button" href="./Day's_AboutMe.html">About me</a>
+    <a class="main_button" href="./Day's_Projects.html">Projects</a>
+    <a class="main_button" href="./Day's_Work.html">My work</a>
+
+    <a href="./Day's_Main.html">
+        <img class="logo" src="./IMG/dayLOGOblack-04.png">
+    </a>
+    <!-- navbar -->
+    <!-- project -->
+    <div class="container">
+        <section class="project-page">
+            <div class="content personal">
+                <p class="project_header">Personal Projects</p>
+                <div class="personal_pro">
+                    <img class="pro_box" src="./IMG/데일리룩 이북.jpg" id="open">
+                    <img class="pro_box" src="./IMG/개인주제 M2.jpg" id="open2">
+                </div>
+            </div>
+            <!-- project -->
+            <!-- modal -->
+            <div class="modal hidden">
+                <div class="modal_overlay"></div>
+                <button class="prev-btn">◀</button>
+                <div class="modal-content">
+                    <div class="modal-section">
+                        <img src="./IMG/데일리룩 이북.jpg" class="modal-img1">
+                        <img src="./IMG/데일리룩 이북2.jpg" class="modal-img1">
+                        <img src="./IMG/데일리룩 이북3.jpg" class="modal-img1">
+                        <img src="./IMG/데일리룩 이북4.jpg" class="modal-img1">
+                        <img src="./IMG/데일리룩 이북5.jpg" class="modal-img1">
+                        <img src="./IMG/데일리룩 이북6.jpg" class="modal-img1">
+                        <img src="./IMG/데일리룩 이북7.jpg" class="modal-img1">
+                        <img src="./IMG/데일리룩 이북8.jpg" class="modal-img1">
+                        <img src="./IMG/데일리룩 이북9.jpg" class="modal-img1">
+                        <img src="./IMG/데일리룩 이북10.jpg" class="modal-img1">
+                        <img src="./IMG/데일리룩 이북11.jpg" class="modal-img1">
+                        <img src="./IMG/데일리룩 이북12.jpg" class="modal-img1">
+                        <img src="./IMG/데일리룩 이북13.jpg" class="modal-img1">
+                        <img src="./IMG/데일리룩 이북14.jpg" class="modal-img1">
+                    </div>
+                </div>
+                <button class="next-btn">▶</button>
+            </div>
+
+            <div class="modal2 hidden">
+                <div class="modal_overlay2"></div>
+                <button class="prev-btn2">◀</button>
+                <div class="modal-content2">
+                    <div class="modal-section2">
+                        <img src="./IMG/개인주제 M2.jpg" class="modal-img2">
+                        <img src="./IMG/개인주제 M2_2.jpg" class="modal-img2">
+                        <img src="./IMG/개인주제 M2_3.jpg" class="modal-img2">
+                        <img src="./IMG/개인주제 M2_4.jpg" class="modal-img2">
+                        <img src="./IMG/개인주제 M2_5.jpg" class="modal-img2">
+                        <img src="./IMG/개인주제 M2_6.jpg" class="modal-img2">
+                        <img src="./IMG/개인주제 M2_7.jpg" class="modal-img2">
+                        <img src="./IMG/개인주제 M2_8.jpg" class="modal-img2">
+                        <img src="./IMG/개인주제 M2_9.jpg" class="modal-img2">
+                        <img src="./IMG/개인주제 M2_10.jpg" class="modal-img2">
+
+                    </div>
+                </div>
+                <button class="next-btn2">▶</button>
+            </div>
+        </section>
+        <!-- modal -->
+
+        <div class="content team">
+            <h1 class="project_header">Team Projects</h1>
+            <div class="refit_pro">
+                <img class="refit_logo" src="./IMG/refit logo  4-07.png">
+                <div class="refit_textbox">
+                    <p class="refit_header">team RE:FIT</p>
+                    <p class="refit_text">빠르게 성장한 패션산업이 많은 환경문제들을 일으키고 있습니다. 리핏은 현재 지속가능하지 못한 패션산업에 변화를 가져오고자 프로젝트를 진행하고
+                        있습니다. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
 
 </body>
@@ -19,3 +100,18 @@
 </script>
 
 </html>
+
+const openButton2 = document.getElementById("open2")
+const modal2 = document.querySelector(".modal2")
+const overlay2 = document.querySelector(".modal_overlay2")
+// const closeBtn = modal.querySelector("button")
+const openModal2 = () => {
+console.log('open')
+modal2.classList.remove("hidden");
+}
+const closeModal2 = () => {
+console.log('close')
+modal2.classList.add("hidden");
+}
+overlay2.addEventListener("click", closeModal2)
+openButton2.addEventListener("click", openModal2)

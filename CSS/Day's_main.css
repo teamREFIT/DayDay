@@ -298,6 +298,7 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 
 .project_texts {
@@ -311,6 +312,7 @@ h1 {
 .gschool {
   margin: 0 0 -2vw 0;
   width: 33vw;
+  margin-top: 3rem;
 }
 
 .projects_text {
@@ -318,6 +320,14 @@ h1 {
   font-family: 'GmarketSansBold';
   font-size: 11vw;
   color: #d9675c;
+}
+
+.go_projects {
+  font-family: 'GmarketSansLight';
+  font-size: 1.8rem;
+  color: #d9675c;
+  margin-top: 4rem;
+  position: relative;
 }
 
 #my_work {
@@ -334,3 +344,52 @@ h1 {
   background-size: cover;
   position: absolute;
 }
+
+/* weird zone */
+.svg-wrapper {
+  height: 60px;
+  margin: 4rem auto 0 auto;
+  position: relative;
+  transform: translateY(-50%);
+  width: 320px;
+}
+
+.shape {
+  fill: transparent;
+  stroke-dasharray: 140 540;
+  stroke-dashoffset: -474;
+  stroke-width: 4px;
+  stroke: #d9675c;
+}
+
+.text {
+  color: #d9675c;
+  font-family: 'GmarketSansLight';
+  font-size: 22px;
+  letter-spacing: 4px;
+  line-height: 32px;
+  position: relative;
+  top: -48px;
+  text-align: center;
+}
+
+@keyframes draw {
+  0% {
+    stroke-dasharray: 140 540;
+    stroke-dashoffset: -474;
+    stroke-width: 8px;
+  }
+
+  100% {
+    stroke-dasharray: 760;
+    stroke-dashoffset: 0;
+    stroke-width: 2px;
+  }
+}
+
+.svg-wrapper:hover .shape {
+  -webkit-animation: 0.3s draw linear forwards;
+  animation: 0.3s draw linear forwards;
+}
+
+/* weird zone */
